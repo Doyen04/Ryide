@@ -114,3 +114,66 @@
     align-items: flex-start;
     justify-content: space-evenly;
 }
+
+.more-description{
+    width: 100%;
+    padding: 50px 0;
+}
+.more-desc-head{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.more-desc-head>p{
+    color:#212145;
+    font-size: 2em;
+    text-align: center;
+    font-family: Cabin,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.more-desc-head>aside{
+    color: var(--smaller-text-color);
+    text-align: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+.more-desc-body{
+    padding: 50px 0;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+}
+.more-desc-body>img{
+    width: 30%;
+    height: 100%;
+}
+.more-desc-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 50%;
+    height: 100%;
+}
+.desc-card{
+    height: 50%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.desc-card>img{
+    width: 50px;
+    height: 50px;
+}
+.desc-card>p{
+    font-family: Cabin, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.desc-card>aside{
+    font-family:'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.3px;
+    color: var(--smaller-text-color);
+}
