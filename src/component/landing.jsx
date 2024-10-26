@@ -2,8 +2,8 @@ import '../styles/landing.css';
 
 import googlePlayIcon from "../assets/svg/google.svg"
 import applePlayIcon from "../assets/svg/apple.svg"
-import greenCheck from '../assets/svg/greenbadge.png'
-import redCheck from '../assets/svg/redbadge.png'
+import phonewithfloats from '../assets/svg/phonewithtag.svg'
+
 
 
 function Landing() {
@@ -39,14 +39,7 @@ function Landing() {
                 </div>
             </div>
             <div className='landing-view-image' >
-                <div className='top-left-float'>
-                    <img src={greenCheck} alt="" />
-                    <p>Accept Customers Ride Request</p>
-                </div>
-                <div className='bottom-right-float'>
-                    <img src={redCheck} alt="" />
-                    <p>Earn More Money By Driving</p>
-                </div>
+                <img src={phonewithfloats} alt="" />
             </div>
         </div>
     )

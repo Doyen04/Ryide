@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: max(500px, calc(100% - var(--header-height)));
+    height: max(600px, calc(100% - var(--header-height)));
     background-image: url(/background.svg);
     background-size: cover;
 }
@@ -31,12 +31,14 @@
     color: grey;
     font-size: 0.8em;
     letter-spacing: 0.2px;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5px;
 }
 .appstore-buttons-container{
     height: fit-content;
     width: 100%;
     display: flex;
-    gap: 9%;
+    gap: 5%;
 }
 .googleplay,.appleplay{
     display: flex;
@@ -65,25 +67,18 @@
     font-size: 16px;
 }
 .landing-view-image{
-    background-image: url('/phone.svg' );
-    background-repeat: no-repeat;
-    background-position: left;
     position: relative;
+
 }
-.top-left-float{
-    top: 20%;
-    left: -5%;
-    background-color: #31A0FE;
+.landing-view-image>img{
+    width: 100%;
+    height: 100%;
 }
-.bottom-right-float{
-    bottom: 31%;
-    left: 200px;
-    background-color: #EC5C2E;
-}
+
 .bottom-right-float,.top-left-float{
     font-family: Cabin, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:white;
-    position: absolute;
+    position: relative;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -91,4 +86,15 @@
     width: max-content;
     gap: 5px;
     font-size: 12px;
+}
+.top-left-float{
+    top: 25%;
+    left: 0%;
+    background-color: #31A0FE;
+}
+.bottom-right-float{
+
+    top: 60%;
+    left: 150px;
+    background-color: #EC5C2E;
 }

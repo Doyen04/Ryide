@@ -2,6 +2,7 @@ import './styles/app.css'
 
 import Header from "./component/header";
 import Landing from './component/landing';
+import Body from './component/body';
 
 
 
@@ -10,6 +11,7 @@ function App(){
         <div className="body">
             <Header/>
             <Landing/>
+            <Body/>
         </div>
     )
 }

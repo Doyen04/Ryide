@@ -1,5 +1,6 @@
 :root{
     --header-height:70px ;
+    --smaller-text-color:#737373;
 }
 
 .header{
@@ -10,26 +11,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15%;
+    gap: 10%;
 }
 .logo-container{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
+    padding: 5px;
+    height: 100%;
+    width: 12%;
 }
 .navbar{
     display: flex;
-    width: 40%;
+    width: 35%;
     justify-content: center;
-    gap: 20%;
+    gap: 15%;
     align-items: center;
     font-size: 14px;
-    color: #737373;
+    color: var(--smaller-text-color);
+    font-family: 'Arial Narrow', Arial, sans-serif;
 }
 .signup-button{
     background-color: #31A0FE;
     color: white;
-    padding: 10px 20px;
+    width: 13%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50px;
     font-size: 0.99em;
 }
