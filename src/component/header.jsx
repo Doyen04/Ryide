@@ -1,10 +1,11 @@
-
+import logo from '../assets/svg/logo.svg'
 import '../styles/header.css'
 
 function Header(){
     return (
         <div className='header'>
             <div className='logo-container'>
+                <img src={logo} alt="" />
                 Ryide
             </div>
             <div className='navbar'>

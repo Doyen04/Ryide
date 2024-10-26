@@ -1,0 +1,94 @@
+
+.landing-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max(500px, calc(100% - var(--header-height)));
+    background-image: url(/background.svg);
+    background-size: cover;
+}
+
+.landing-view-description,.landing-view-image{
+    height: 100%;
+    width: 40%;
+}
+.landing-view-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+.main-description{
+    color: #212145;
+    font-family: Cabin, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.6em;
+    font-weight: bold;
+    letter-spacing: 0.1px;
+    line-height: 1.3em;
+}
+.sub-description{
+    color: grey;
+    font-size: 0.8em;
+    letter-spacing: 0.2px;
+}
+.appstore-buttons-container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    gap: 9%;
+}
+.googleplay,.appleplay{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 5px;
+    background-color: #252B42;
+    width: 200px;
+    height: 70px;
+    border-radius: 7px;
+    color: white;
+    line-height: 1em;
+}
+.appstore-buttons-container img{
+    width: 25px;
+    height: 100%;
+}
+.appstore-buttons-container aside{
+    font-family: Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+.appstore-buttons-container p{
+    font-family: 'Montserrat Regular', 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-size: 16px;
+}
+.landing-view-image{
+    background-image: url('/phone.svg' );
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+}
+.top-left-float{
+    top: 20%;
+    left: -5%;
+    background-color: #31A0FE;
+}
+.bottom-right-float{
+    bottom: 31%;
+    left: 200px;
+    background-color: #EC5C2E;
+}
+.bottom-right-float,.top-left-float{
+    font-family: Cabin, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    position: absolute;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: max-content;
+    gap: 5px;
+    font-size: 12px;
+}
