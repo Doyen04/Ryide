@@ -117,7 +117,7 @@
 
 .more-description{
     width: 100%;
-    padding: 50px 0;
+    padding: 50px 100px;
 }
 .more-desc-head{
     width: 100%;
@@ -144,18 +144,17 @@
     width: 100%;
     height: 500px;
     display: flex;
-    justify-content: center;
-    gap: 7%;
+    justify-content: space-between;
 }
 .more-desc-body>img{
-    width: 30%;
+    width:40%;
     height: 100%;
 }
 .more-desc-cards{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    width: 50%;
+    width: 40%;
     height: 100%;
 }
 .desc-card{

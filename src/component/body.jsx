@@ -9,7 +9,6 @@ import msgIcon from '../assets/svg/IconBox0.svg'
 function Body() {
     return (
         <>
-
             <div className='website-body'>
                 <div className='main-container'>
                     <div className='container-heading'>
