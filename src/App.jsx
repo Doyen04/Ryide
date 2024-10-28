@@ -3,6 +3,7 @@ import './styles/app.css'
 import Header from "./component/header";
 import Landing from './component/landing';
 import Body from './component/body';
+import Footer from './component/footer';
 
 
 
@@ -12,6 +13,7 @@ function App(){
             <Header/>
             <Landing/>
             <Body/>
+            <Footer/>
         </div>
     )
 }
