@@ -8,16 +8,20 @@
     font-weight: bold;
     width: 100%;
     height: var(--header-height);
+    padding: 0 100px;
+}
+.main-cover{
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10%;
 }
 .logo-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
     padding: 5px;
     height: 100%;
     width: 12%;
@@ -25,8 +29,9 @@
 .navbar{
     display: flex;
     width: 35%;
-    justify-content: center;
-    gap: 15%;
+    height: 100%;
+    justify-content: space-evenly;
+    /* gap: 15%; */
     align-items: center;
     font-size: 14px;
     color: var(--smaller-text-color);
@@ -35,7 +40,7 @@
 .signup-button{
     background-color: #31A0FE;
     color: white;
-    width: 13%;
+    width: 100px;
     height: 35px;
     display: flex;
     justify-content: center;
