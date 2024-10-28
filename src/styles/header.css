@@ -1,6 +1,7 @@
 :root{
     --header-height:70px ;
     --smaller-text-color:#737373;
+    object-fit: contain;
 }
 
 .header{

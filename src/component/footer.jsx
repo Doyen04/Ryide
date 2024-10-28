@@ -1,6 +1,7 @@
 import '../styles/footer.css'
 
 import doublePhone from '../assets/svg/DoublePhone.svg'
+import socialIcon from '../assets/svg/socialmedia.svg'
 
 
 function Footer() {
@@ -15,9 +16,7 @@ function Footer() {
                             Travel anywhere, anytime, with ease <br />
                             using Ryide hassle-free platform
                         </p>
-                        <div>
-
-                        </div>
+                        <img src={socialIcon}/>
                     </div>
                     <div className='container-for-info'>
                         <h1>Company info</h1>
