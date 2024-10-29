@@ -39,6 +39,12 @@
 }
 .navbar,.signup-button{
     display: none;
+    cursor: pointer;
+    position: relative;
+}
+.navbar>div{
+    position: relative;
+    text-align: center;
 }
 .show{
     display: flex;
