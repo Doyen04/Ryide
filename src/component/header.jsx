@@ -17,7 +17,7 @@ function Header() {
     function toggleLink(ev) {
         const index = Array.from(document.getElementsByClassName('links')).indexOf(ev.target);
         setIsLink(
-            [...isLink].map((link, i) => i === index?!link : link)
+            [...isLink].map((link, i) => i === index ? !link : link)
         );
     }
     return (
@@ -29,7 +29,7 @@ function Header() {
                 </div>
                 <motion.div
                     initial={{ opacity: 0, scale: 0.1 }}
-                    animate={isOpen ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.1 }}
+                    animate={isOpen ? { opacity: 1, scale: 1 } : { opacity: 1, scale: 1 }}
                     transition={{
                         duration: 0.8,
                         ease: "easeOut"
@@ -99,7 +99,7 @@ function Header() {
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, scale: 0.1, }}
-                    animate={isOpen ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.1 }}
+                    animate={isOpen ? { opacity: 1, scale: 1 } : { opacity: 1, scale: 1 }}
                     transition={{
                         duration: 0.8, ease: "easeOut"
                     }}
@@ -113,8 +113,8 @@ function Header() {
                     whileTap={{ scale: 0.5 }}
                     transition={{ duration: 0.5 }}
                     animate={isOpen ? "open" : "closed"}
-                    style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}
-                    className='toggle' onClick={toggleButton}
+                    className='toggle'
+                    onClick={toggleButton}
                 >
                     <motion.div
                         variants={{
