@@ -1,52 +1,59 @@
-
-.landing-view{
+.landing-view {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: max(600px, calc(100% - var(--header-height)));
+    height: auto;
     background-image: url(/background.svg);
-    background-size: cover;
-    padding: 0 100px;
+    background-size: contain;
+    padding: 0 10px;
 }
-.view-maincover{
+
+.view-maincover {
     width: 100%;
     height: 100%;
+    padding-top: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
 }
-.landing-view-description,.landing-view-image{
-    height: 100%;
-    width: 45%;
-}
-.landing-view-description{
+
+
+
+.landing-view-description {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 50px;
 }
-.main-description{
+
+.main-description {
     color: #212145;
     font-family: Cabin, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3.6em;
+    font-size: 2.3em;
     font-weight: bold;
     letter-spacing: 0.1px;
     line-height: 1.3em;
+    text-align: center;
 }
-.sub-description{
+
+.sub-description {
     color: grey;
     font-size: 0.8em;
     letter-spacing: 0.2px;
-    font-family:  'Arial Narrow', Arial, sans-serif;
+    font-family: 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 0.5px;
+    text-align: center;
 }
-.appstore-buttons-container{
+
+.appstore-buttons-container {
     height: fit-content;
     width: 100%;
     display: flex;
-    gap: 5%;
+    justify-content: space-evenly;
 }
-.googleplay,.appleplay{
+
+.googleplay,
+.appleplay {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -58,49 +65,102 @@
     color: white;
     line-height: 1em;
 }
-.appstore-buttons-container img{
+
+.appstore-buttons-container img {
     width: 25px;
     height: 100%;
 }
-.appstore-buttons-container aside{
-    font-family: Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.appstore-buttons-container aside {
+    font-family: Cabin, 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 14px;
 }
-.appstore-buttons-container p{
-    font-family: 'Montserrat Regular', 'Courier New', Courier, monospace;
+
+.appstore-buttons-container p {
+    font-family: 'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
     font-size: 16px;
+    letter-spacing: 0.6px;
 }
-.landing-view-image{
-    position: relative;
 
+.landing-view-image {
+    position: relative;
+    width: 100%;
+    height: 400px;
 }
-.landing-view-image>img{
+
+.landing-view-image>img {
     width: 100%;
     height: 100%;
 }
 
-.bottom-right-float,.top-left-float{
-    font-family: Cabin, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:white;
-    position: relative;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    width: max-content;
-    gap: 5px;
-    font-size: 12px;
-}
-.top-left-float{
-    top: 25%;
-    left: 0%;
-    background-color: #31A0FE;
-}
-.bottom-right-float{
+@media (min-width: 768px) {
+    .landing-view {
+        padding: 0 100px;
+        width: 100%;
+        height: max(600px, calc(100vh - var(--header-height)));
+        background-image: url(/background.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
-    top: 60%;
-    left: 150px;
-    background-color: #EC5C2E;
+    .view-maincover {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        padding:0;
+    }
+
+    .landing-view-description,
+    .landing-view-image {
+        height: 100%;
+        width: 45%;
+    }
+    .landing-view-description > section{
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        /* background-color: red; */
+    }
+    .appstore-buttons-container{
+        height: 35%;
+        /* background-color: green; */
+    }
+    .main-description{
+        font-size: 3.3em;
+    }
+}
+@media (min-width: 901px) and (max-width:1100px) {
+    .header{
+        padding: 0 50px;
+    }
+    .landing-view{
+        padding: 0 50px;
+    }
+    .appleplay,.googleplay{
+        width: 40%;
+    }
+}
+@media (min-width: 768px) and (max-width:900px) {
+    .header{
+        padding: 0 20px;
+    }
+    .landing-view{
+        padding: 0 20px;
+    }
+    .view-maincover{
+        gap: 0;
+    }
+    .landing-view-description,
+    .landing-view-image {
+        height: 100%;
+        width: 50%;
+    }
+    .appleplay,.googleplay{
+        width: 40%;
+    }
 }

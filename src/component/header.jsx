@@ -17,7 +17,7 @@ function Header() {
     function toggleLink(ev) {
         const index = Array.from(document.getElementsByClassName('links')).indexOf(ev.target);
         setIsLink(
-            [...isLink].map((link, i) => i === index ? !link : link)
+            [...isLink].map((link, i) => i === index ? !link : false)
         );
     }
     return (
@@ -27,20 +27,14 @@ function Header() {
                     <img src={logo} alt="" />
                     Ryide
                 </div>
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.1 }}
-                    animate={isOpen ? { opacity: 1, scale: 1 } : { opacity: 1, scale: 1 }}
-                    transition={{
-                        duration: 0.8,
-                        ease: "easeOut"
-                    }}
+                <div
                     className='navbar'
                 >
                     <div onClick={toggleLink} className='links'>
                         Home
                         <motion.div
                             initial={{ width: 0 }}
-                            animate={isLink[0] ? { width: '100%' } : { width: '0' }}
+                            animate={isLink[0] ?{ width: '100%' } : { width: '0' }}
                             transition={{ duration: 0.5 }}
                             style={{
                                 position: 'absolute',
@@ -96,10 +90,10 @@ function Header() {
                             }}
                         />
                     </div>
-                </motion.div>
+                </div>
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.1, }}
-                    animate={isOpen ? { opacity: 1, scale: 1 } : { opacity: 1, scale: 1 }}
+                    initial={{ color: 'white'}}
+                    whileHover={{backgroundColor: '#ffffff', border:'2px solid #31A0FE', color: '#31A0FE'  }}
                     transition={{
                         duration: 0.8, ease: "easeOut"
                     }}
@@ -109,7 +103,7 @@ function Header() {
                 </motion.div>
                 <motion.button
                     initial={{ backgroundColor: '#ffffff' }}
-                    whileHover={{ backgroundColor: '#0056b3' }}
+                    whileHover={{ backgroundColor: '',  }}
                     whileTap={{ scale: 0.5 }}
                     transition={{ duration: 0.5 }}
                     animate={isOpen ? "open" : "closed"}

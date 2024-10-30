@@ -12,7 +12,7 @@ function Landing() {
         <div className="landing-view" >
             <section className='view-maincover'>
                 <div className='landing-view-description'>
-                    <div>
+                    <section>
                         <div className='main-description'>
                             Your Smooth Ride, <br />Just a Tap Away
                         </div>
@@ -20,7 +20,7 @@ function Landing() {
                             Experience hassle-free transportation with Ryide <br />
                             Reliable rides, anytime, anywhere at an affordable price
                         </div>
-                    </div>
+                    </section>
                     <div className='appstore-buttons-container'>
                         <div className='googleplay'>
                             <img src={googlePlayIcon} alt="" />
