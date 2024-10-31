@@ -12,8 +12,8 @@ function App(){
         <div className="body">
             <Header/>
             <Landing/>
-            {/* <Body/>
-            <Footer/> */}
+            <Body/>
+            {/* <Footer/> */}
         </div>
     )
 }
