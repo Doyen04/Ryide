@@ -134,7 +134,7 @@
         font-size: 3.3em;
     }
 }
-@media (min-width: 901px) and (max-width:1100px) {
+@media (min-width: 901px) and (max-width:1110px) {
     .header{
         padding: 0 50px;
     }
@@ -143,6 +143,11 @@
     }
     .appleplay,.googleplay{
         width: 40%;
+    }
+    .landing-view-description,
+    .landing-view-image {
+        height: 100%;
+        width: 50%;
     }
 }
 @media (min-width: 768px) and (max-width:900px) {

@@ -78,7 +78,9 @@
         background-color: #31A0FE;
         color: white;
     }
-    
+    .show,.show-button{
+        z-index: 10000;
+    }
 }
 
 @media (min-width: 768px) {
