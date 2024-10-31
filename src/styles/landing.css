@@ -59,7 +59,7 @@
     align-items: center;
     padding: 5px 5px;
     background-color: #252B42;
-    width: 200px;
+    width: 180px;
     height: 70px;
     border-radius: 7px;
     color: white;
@@ -99,7 +99,7 @@
     .landing-view {
         padding: 0 100px;
         width: 100%;
-        height: max(600px, calc(100vh - var(--header-height)));
+        height: min(990px, calc(100vh - var(--header-height)));
         background-image: url(/background.svg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -116,6 +116,7 @@
     .landing-view-image {
         height: 100%;
         width: 45%;
+        gap: 0;
     }
     .landing-view-description > section{
         height: 60%;
@@ -124,11 +125,9 @@
         flex-direction: column;
         justify-content: center;
         gap: 20px;
-        /* background-color: red; */
     }
     .appstore-buttons-container{
         height: 35%;
-        /* background-color: green; */
     }
     .main-description{
         font-size: 3.3em;
